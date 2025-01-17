@@ -1,13 +1,14 @@
 #!/bin/bash
-#tels -ls user if a script/binary exists, where it is located, and
-#if executable privledges are turned on
+#tells user if a program is in the path variable, where it is
+#located in the event that it is, and if executable privledges
+#are turned on
 
 SCRIPT=$0
 PROGRAM_NAME=$1
 
 #instructions
 if [ $# -lt 1 ]; then
-	echo "Usage:${SCRIPT##*/} [program-name]"
+	echo "Usage:${SCRIPT##*/} [command name]"
 	exit 1
 fi 
 
