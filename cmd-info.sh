@@ -55,4 +55,5 @@ done < path-dirs
 
 echo "${PROGRAM_NAME##*/} does not exist in \$PATH"
 
+#removes temporary file created by this script
 rm path-dirs
